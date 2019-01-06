@@ -46,7 +46,7 @@
                         </li>
                     <?php }else { ?>
                         <li class="nav-item">
-                            <a class="nav-link " href="login.php">LOGIN</a>
+                            <a class="nav-link " href="login.php">for Admin</a>
                         </li>
                     <?php }?>
                 </ul>
