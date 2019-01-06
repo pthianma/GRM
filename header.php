@@ -14,6 +14,9 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="loginUser.php">Check Reward</a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="register.php">Register</a>
+                    </li>
                     <?php  
                         if(isset($_SESSION['name'])){
                             if($_SESSION['name']=='admin') { 

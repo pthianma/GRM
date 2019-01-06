@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +10,15 @@
 </head>
 <body>
     <?php
+        include_once('connect.php');
+
         if(isset($_POST['submit'])){
-            echo $_POST['user_id'].'<br />';
+            $user_id =  $_POST['user_id'];
+            $sql = "INSERT INTO `user` (`user_id`, `reward`) VALUES ('".$user_id."', '0')";
+            $result = $conn->query($sql);
         }
-        else{
-            echo 'd';
-        }
+
+        include_once('header.php');
     ?>
 
       <div class="container">
@@ -23,37 +27,13 @@
                 <div class="card">
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="card-header text-center">
-                            LOGIN ON ACCOUNT
+                            CREAT  ACCOUNT
                         </div>
                         <div class="card-body">
                             <div class="form-group row container">
                                 <label for="user_id" class="col-sm-3 col-form-label">Phone Regis</label>
                                 <input type="text" class="form-control" id="user_id" name="user_id">
                             </div> 
-                            <!-- <div class="form-group row">
-                                <label for="lastname" class="col-sm-3 col-form-label">Last Name</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="lastname" name="lastname">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="username" class="col-sm-3 col-form-label">Username</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="username" name="username">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="password" class="col-sm-3 col-form-label">Password</label>
-                                <div class="col-sm-9">
-                                    <input type="password" class="form-control" id="password" name="password">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="fileUpload" class="col-sm-3 col-form-label">Upload</label>
-                                <div class="col-sm-9">
-                                    <input type="file" class="form-control" id="fileUpload" name="fileUpload">
-                                </div>
-                            </div> -->
                             <div class="text-center">
                                 <input type="submit" name="submit" class="btn btn-success" value="Register">
                             </div>
