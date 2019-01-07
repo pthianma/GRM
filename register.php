@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>login</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <?php include_once('insertCss.php'); ?>
 </head>
 <body>
     <?php
@@ -23,7 +24,7 @@
 
       <div class="container">
          <div class="row">
-            <div class="col-md-8 mx-auto mt-5 ">
+            <div class="col-md-5 mx-auto mt-5 ">
                 <div class="card">
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="card-header text-center">
@@ -31,7 +32,7 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group row container">
-                                <label for="user_id" class="col-sm-3 col-form-label">Phone Regis</label>
+                                <label for="user_id" >Phone Regis</label>
                                 <input type="text" class="form-control" id="user_id" name="user_id">
                             </div> 
                             <div class="text-center">

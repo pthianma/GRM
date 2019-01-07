@@ -22,7 +22,10 @@
                             if($_SESSION['name']=='admin') { 
                                 echo '
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">User List</a>
+                                    <a class="nav-link" href="userlist.php">User List</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="withdraw.php">Withdraw</a>
                                 </li>
                                 ';
                             }
@@ -38,11 +41,11 @@
                     <?php  if(isset($_SESSION['id'])) { ?>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            User : <?php echo $_SESSION['name']; ?>
+                            Rule : <?php echo $_SESSION['name']; ?>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="userlist.php">User List</a>
+                            <a class="dropdown-item" href="withdraw.php">Withdraw</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="logout.php">logout</a>
                             </div>

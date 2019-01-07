@@ -96,7 +96,8 @@
                 <div class="col-md-7">
                     <h2 class="featurette-heading">1. ขวดน้ำที่ขายได้จะต้องอยู่ภายในฐานข้อมูลเท่านั้น </h2>
                     <p class="lead">ขวดน้ำที่มีอยู่ใน ฐ้านข้อมูล</p>
-                    <p class="lead">nestle1.5, nestle0.6, nestle0.35, crystal1.5, crystal0.6, crystal0.32</p>
+                    <p class="lead"><b>Nestle </b> <span class="text-muted">: size 1500 ml, 600 ml, 350 ml</span></p>
+                    <p class="lead"><b>Crystal</b> <span class="text-muted">: size 1500 ml, 600 ml, 320 ml</span></p>
                 </div>     
             </div>
 

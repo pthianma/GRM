@@ -36,10 +36,10 @@
 
     ?>
     <!-- navbar --><?php include_once('header.php'); ?>
-    <br />
+
     <div class="container">
         <div class="row ">
-            <div class="col-md-5 mx-auto">
+            <div class="col-md-5 mx-auto mt-5">
                 <div class="card">
                     <div class="card-header text-center">
                         Check Reward !!
