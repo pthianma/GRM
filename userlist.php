@@ -13,6 +13,10 @@
     <?php
         include_once('connect.php');
         include_once('header.php');
+
+        if(isset($_GET['e_id'])){
+            echo $_GET['e_id'];
+        }
     ?>
     
     <div class="container">
@@ -33,9 +37,6 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <!-- <tr>
-                                    <td while="500"> User ID </td><td> Reward</td>
-                                </tr> -->
                                 <?php                                 
                                     $sql = "SELECT * FROM `user` ";
                                     
@@ -47,10 +48,8 @@
                                             echo $row['reward'];
                                             echo ".-";
                                             echo "</td><td>";
-                                            echo "<a href='#'>Edit</a>";
+                                            echo "<a href='edituser.php?e_id=".$row['user_id']."'>Edit</a>";
                                             echo "</td></tr>";
-                                            // $_SESSION['user_id'] = $row['user_id'];
-                                            // $_SESSION['reward'] = $row['reward'];
                                         }                      
                                         $result->free();
                                     }

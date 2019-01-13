@@ -32,9 +32,9 @@ input[type=text]:focus {
 <body class="Ebody">
     <?php
         include_once('connect.php');
-
+        
         if(isset($_POST['submit'])){
-            
+
             $user_id =  $_POST['user_id'];
 
             $sql = "SELECT * FROM `user` WHERE `user_id` = '".$user_id."' ";
@@ -52,8 +52,20 @@ input[type=text]:focus {
                 $_SESSION['reward'] = '(invalid) 0';
                 $_SESSION['user_id'] = 'invalid';
 
-            }
+            }      
         }
+        if(isset($_POST['Retrench'])){
+            $user_id = $_SESSION['user_id'];
+            $cut_reward = $_POST['cut_reward'];
+            $reward = $_SESSION['reward'];
+            $update_reward = $reward-$cut_reward;
+
+            $sql = "UPDATE `user` SET `reward` = '".$update_reward."' WHERE `user`.`user_id` = '".$user_id."' ";
+            $result = $conn->query($sql);
+
+            $_SESSION['reward'] = $update_reward;
+        }
+        
 
         include_once('header.php');
     ?>
@@ -68,13 +80,6 @@ input[type=text]:focus {
                     <div class="card-body">
                         <div class="container text-center">
                             <form action="" method="POST">
-                                <!-- <div class="col-md-4">
-                                    <label for="user_id">Phone Number</label>
-                                    <input type="text" class="form-control" id="user_id" name="user_id">
-                                </div>
-                                <div class="col-md-2">
-                                    <input type="submit" name="submit" class="btn btn-success" value="Search">
-                                </div> -->
                                 <div class="text-center">
                                 <input type="text" id="user_id" name="user_id" placeholder="Search..">
                                 <input type="submit" name="submit" class="btn btn-success " value="Search"> 
@@ -83,10 +88,14 @@ input[type=text]:focus {
                             <?php  if(isset($_SESSION['user_id'])) { ?>                                
                                 <h4><b>Phone Number</b> : <?php  echo $_SESSION['user_id']; ?></h4>
                                 <h1 class="display-4 text-center"><?php  echo $_SESSION['reward']; ?> Bath</h1>
-                            </div>
-                            <?php }else { ?>
-                               
+                            </div>                           
                             <?php }?>
+                            <form action="" method="POST">
+                                <div class="text-center">
+                                <input style="width:40%; font-size: 24px;" type="text" id="cut_reward" name="cut_reward" placeholder="WithDraw Reward..">
+                                <input type="submit" name="Retrench" class="btn btn-success " value="Retrench"> 
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
