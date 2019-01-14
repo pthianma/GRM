@@ -111,9 +111,9 @@
                 <div class="col-md-7 push-md-5">
                     <h2 class="featurette-heading">2. ขนาดของขวดน้ำมีราคาที่เเตกต่างกัน </h2>
                     <!-- <span class="text-muted">See for yourself.</span> -->
-                    <p class="lead"> - Size S ราคา / ขวด</p>
-                    <p class="lead"> - Size M ราคา / ขวด</p>
-                    <p class="lead"> - Size L ราคา / ขวด</p>
+                    <p class="lead"> - Size S ราคา 0.25 บาท/ ขวด</p>
+                    <p class="lead"> - Size M ราคา 0.32 บาท / ขวด</p>
+                    <p class="lead"> - Size L ราคา 0.375 บาท / ขวด</p>
                 </div>               
             </div>
 
