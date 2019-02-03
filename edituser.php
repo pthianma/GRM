@@ -50,7 +50,7 @@
                             <div>
                                 <div class="form-group">
                                     <label for="e_user_id">User ID</label>
-                                    <input type="text" class="form-control" id="e_user_id" name="e_user_id" value="<?php echo $_SESSION['e_id']; ?>" disabled>
+                                    <input type="text" class="form-control" id="e_user_id" name="e_user_id" value="<?php echo $_SESSION['user_id']; ?>" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="e_reward">Reward</label>
