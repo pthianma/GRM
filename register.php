@@ -24,11 +24,12 @@
 
       <div class="container">
          <div class="row">
-            <div class="col-md-5 mx-auto mt-5 ">
+            <div class="col-md-8 mx-auto mt-5 ">
                 <div class="card">
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="card-header text-center">
-                            CREAT  ACCOUNT
+                        <h1 class="display-4">CREAT  ACCOUNT</h1>
+                            
                         </div>
                         <div class="card-body">
                             <div class="form-group row container">

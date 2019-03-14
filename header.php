@@ -20,12 +20,18 @@
                     <?php  
                         if(isset($_SESSION['name'])){
                             if($_SESSION['name']=='admin') { 
-                                echo '
+                                echo '                               
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="withdraw.php">Withdraw</a>
+                                </li>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="userlist.php">User List</a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="withdraw.php">Withdraw</a>
+                                    <a class="nav-link" href="bottle.php">Bottle List</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="transections.php">Transection</a>
                                 </li>
                                 ';
                             }
