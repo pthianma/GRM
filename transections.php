@@ -24,7 +24,7 @@
             <div class="col-md-8 mx-auto mt-5">
                 <div class="card">
                     <div class="card-header text-center">
-                    <h1 class="display-4">Bottle List </h1>
+                    <h1 class="display-4">Transections List </h1>
                     </div>
                     <div class="card-body">
                         <div class="container">
@@ -56,10 +56,7 @@
                                     }
                                 ?>                                 
                                 </tbody>                                
-                            </table>
-                            <div class="text-center">
-                                <a class="btn btn-success btn-lg" href="barcode.php" role="button"> Add Bottle </a>
-                            </div>                            
+                            </table>             
                         </div>
                     </div>
                 </div>

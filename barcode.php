@@ -33,7 +33,7 @@
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="card-header text-center ">
                             <h1 class="display-4">ADD New Bottle</h1>
-                        </div>
+                        </div>  
                         <div class="card-body">
                             <div class="form-group row container">
                                 <label for="b_id" >New Bottle ID</label>
