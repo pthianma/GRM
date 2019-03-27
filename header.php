@@ -33,6 +33,9 @@
                                 <li class="nav-item active">
                                     <a class="nav-link" href="transections.php">Transection</a>
                                 </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="bottleStore.php">BottleStore</a>
+                                </li>
                                 ';
                             }
                             else{

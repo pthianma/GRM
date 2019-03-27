@@ -32,11 +32,8 @@
             }
             else{
                 echo 'username and pass is invalid';
-            }
-            
-        }
-        
-
+            }            
+        }     
     ?>
 
     <!-- navbar --><?php include_once('header.php'); ?>
