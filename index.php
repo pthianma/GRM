@@ -64,7 +64,7 @@
         <div class="row text-center ">
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="./image/3icon1.png" alt="Generic placeholder image" width="140" height="140">
-                    <h2>สิ่งแล้วล้อม</h2>
+                    <h2>สิ่งแวดล้อม</h2>
                     <p>ช่วยเสริมสร้างจิตใจที่รักษ์สิ่งแวดล้อม</p>
                     <!-- <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p> -->
                 </div>
